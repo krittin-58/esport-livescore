@@ -2,8 +2,7 @@
     <v-container>
     <div id="selection-game">
         <v-row>
-            <v-col md="3" v-for="game in games"
-                    :key="game.name">
+            <v-col md="3" v-for="game in games" :key="game.name">
                 <v-card
                     class="mx-auto"
                     max-width="344"
@@ -20,7 +19,6 @@
                     <v-card-actions>
                     <v-card-text>
                         <v-chip-group
-                            v-model="selection"
                             active-class="deep-purple accent-4 white--text"
                             column
                         >
