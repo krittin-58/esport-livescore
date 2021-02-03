@@ -1,14 +1,24 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
+    <section-one>
+      
+    </section-one>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import SectionOne from '@/components/landing/SectionOne.vue';
 
 export default {
   name: 'Home',
-  components: {}
+  components: {
+    SectionOne,
+  },
+  data () {
+    return {
+      //
+    }
+  }
 }
 </script>

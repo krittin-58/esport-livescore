@@ -1,7 +1,7 @@
 <template>
       <div>
         <v-toolbar
-        color="grey lighten-2">
+        color="green">
           
           <v-toolbar-title>Livescore</v-toolbar-title>
 
