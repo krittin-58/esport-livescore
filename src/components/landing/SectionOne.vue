@@ -9,6 +9,7 @@
                 >
                     <v-img
                     :src="game.imageUrl"
+                    :lazy-src="game.imageUrl"
                     height="200px"
                     ></v-img>
 
@@ -16,22 +17,6 @@
                     {{ game.name }}
                     </v-card-title>
 
-                    <v-card-actions>
-                    <v-card-text>
-                        <v-chip-group
-                            active-class="deep-purple accent-4 white--text"
-                            column
-                        >
-                            <v-chip color="red">Live</v-chip>
-
-                            <v-chip color="green">Matches</v-chip>
-
-                            <v-chip color="blue">Teams</v-chip>
-
-                            <v-chip color="orange">Players</v-chip>
-                        </v-chip-group>
-                        </v-card-text>
-                    </v-card-actions>
                 </v-card>
             </v-col>
         </v-row>
@@ -98,3 +83,11 @@ export default {
     }
 }
 </script>
+
+<style>
+#selection-game  {
+    height: 100vh;
+    background: transparent
+}
+
+</style>

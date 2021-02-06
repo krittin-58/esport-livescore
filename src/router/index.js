@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import LivePage from '../views/Live.vue'
 import MatchesPage from '../views/Matches.vue'
 import GamesPage from '../views/Games.vue'
+import SchedulesPage from '../views/Schedules.vue';
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/games',
     name: 'Games-page',
     component: GamesPage
+  },
+  {
+    path: '/schedules',
+    name: 'Schedules-page',
+    component: SchedulesPage
   },
   {
     path: '/about-us',

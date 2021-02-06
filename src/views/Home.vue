@@ -1,19 +1,17 @@
 <template>
   <div class="home">
-    <section-one>
-      
-    </section-one>
+    <IntroWebsite></IntroWebsite>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import SectionOne from '@/components/landing/SectionOne.vue';
+import IntroWebsite from '@/components/landing/SectionTwo.vue';
 
 export default {
   name: 'Home',
   components: {
-    SectionOne,
+    IntroWebsite
   },
   data () {
     return {

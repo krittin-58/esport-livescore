@@ -2,9 +2,11 @@
   <v-app>
     <!-- Navbar layout -->
     <navbar></navbar>
+    <v-parallax height="100%" src="https://cdn.shopify.com/s/files/1/0070/6661/5861/files/Featured_product_backgroud_image_1800x.jpg?v=1552502823">
     <v-main>
       <main-content></main-content>
     </v-main>
+    </v-parallax>
     <!-- <v-footer padless>
       <v-col
         class="text-center"

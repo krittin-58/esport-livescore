@@ -41,3 +41,9 @@
             </v-slide-group>
     </div>
 </template>
+
+<script>
+export default {
+    props: ['games'],
+}
+</script>
