@@ -7,7 +7,8 @@ const ACCESS_TOKEN = 'd0Q0tNZWxtU_f_wpHcGBfi8bHD1X3SkVaUZBMQVt_m5xc18ZDjs';
 const LEAGUES = 'leagues';
 
 const headers = {
-    'content-type': 'application/json'
+    'content-type': 'application/json',
+    'Access-Control-Allow-Origin': '*'
 }
 
 const PandascoreAPI = {
