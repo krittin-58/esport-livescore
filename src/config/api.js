@@ -8,7 +8,8 @@ const LEAGUES = 'leagues';
 
 const headers = {
     'content-type': 'application/json',
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
+    mode: 'cors'
 }
 
 const PandascoreAPI = {
