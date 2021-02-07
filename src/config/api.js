@@ -9,7 +9,8 @@ const LEAGUES = 'leagues';
 
 const headers = {
     'content-type': 'application/json',
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': 'https://esport-livescore-362bf.web.app',
+    mode: 'cors'
 }
 
 const PandascoreAPI = {
