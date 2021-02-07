@@ -68,12 +68,16 @@ export default {
 
     methods: {
         getLeagues() {
-            PandascoreAPI.getListLeagues().then((response) => {
-                this.loading = true
-                if (response.data !== null)
-                this.leagues = response.data;
-                    this.loading = false;
-            });
+            try {
+                PandascoreAPI.getListLeagues().then((data) => {
+                    if (data !== null)
+                    this.leagues = data
+                    this.loading = false
+                });
+            } catch (error) {
+                console.log(error);
+            }
+            
         }
     }
 }

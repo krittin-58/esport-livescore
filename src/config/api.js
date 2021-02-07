@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 
 const API_URL_ENDPOINT = 'https://api.pandascore.co';
 const ACCESS_TOKEN = 'd0Q0tNZWxtU_f_wpHcGBfi8bHD1X3SkVaUZBMQVt_m5xc18ZDjs';
@@ -13,8 +13,9 @@ const headers = {
 
 const PandascoreAPI = {
     // Get List Leagues
-    getListLeagues() {
-        return axios.get(`${API_URL_ENDPOINT}/${LEAGUES}?token=${ACCESS_TOKEN}`, headers);
+    async getListLeagues() {
+        const response = await fetch(`${API_URL_ENDPOINT}/${LEAGUES}?token=${ACCESS_TOKEN}`, headers);
+        return response.json();
     }
 }
 
