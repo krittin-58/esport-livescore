@@ -34,7 +34,15 @@
             </template>
             <span>Coming Soon!</span>
           </v-tooltip>
-          
+
+           <v-btn
+            text
+            color="white"
+            to="/leagues"
+          >
+            Leagues
+          </v-btn>
+
           <v-btn
             text
             color="white"

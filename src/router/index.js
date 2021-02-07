@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import LivePage from '../views/Live.vue'
+import LeaguesPage from '../views/Leagues.vue'
+import LeagueDetail from '../views/LeagueDetail.vue'
 import MatchesPage from '../views/Matches.vue'
 import GamesPage from '../views/Games.vue'
 import SchedulesPage from '../views/Schedules.vue';
@@ -18,6 +20,16 @@ const routes = [
     path: '/live',
     name: 'Live-page',
     component: LivePage
+  },
+  {
+    path: '/leagues',
+    name: 'Leagues-page',
+    component: LeaguesPage,
+  },
+  {
+    path: '/leagues/:id',
+    name: 'League-detail',
+    component: LeagueDetail,
   },
   {
     path: '/matches',
