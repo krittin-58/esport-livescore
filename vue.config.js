@@ -3,11 +3,6 @@ module.exports = {
     'vuetify'
   ],
   devServer: {
-    proxy: {
-      '^/': {
-        target: 'https://api.pandascore.co',
-        changeOrigin: true
-      }
-    }
+    proxy: 'https://api.pandascore.co'
   }
 }
