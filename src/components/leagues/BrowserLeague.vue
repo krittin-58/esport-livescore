@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import PandascoreAPI from '@/config/api';
+import PandascoreAPI from '../../config/api';
 
 export default {
     name: 'Browser-Leagues',
@@ -69,15 +69,15 @@ export default {
     methods: {
         getLeagues() {
             try {
-                PandascoreAPI.getListLeagues().then((data) => {
-                    if (data !== null)
-                    this.leagues = data
-                    this.loading = false
+                PandascoreAPI.getListLeagues().then((response) => {
+                this.loading = true
+                if (response.data !== null)
+                this.leagues = response.data;
+                    this.loading = false;
                 });
             } catch (error) {
-                console.log(error);
+                console.log(error)
             }
-            
         }
     }
 }
