@@ -6,6 +6,7 @@ const ACCESS_TOKEN = 'd0Q0tNZWxtU_f_wpHcGBfi8bHD1X3SkVaUZBMQVt_m5xc18ZDjs';
 
 // PATH
 const LEAGUES = 'leagues';
+const TEAMS = 'teams';
 
 const headers = {
     'content-type': 'application/json',
@@ -17,6 +18,10 @@ const PandascoreAPI = {
     // Get List Leagues
     async getListLeagues() {
         return await axios.get(`${API_URL_ENDPOINT}/${LEAGUES}?token=${ACCESS_TOKEN}`, headers);
+    },
+
+    async getListTeams(per_page) {
+        return await axios.get(`${API_URL_ENDPOINT}/${TEAMS}?token=${ACCESS_TOKEN}&per_page=${per_page}`, headers);
     }
 };
 

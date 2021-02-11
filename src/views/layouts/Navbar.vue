@@ -1,15 +1,15 @@
 <template>
       <div>
         <v-toolbar
-        color="black">
+        color="transparent">
           
-          <v-toolbar-title class="white--text">Livescore</v-toolbar-title>
+          <v-toolbar-title class="black--text">Livescore</v-toolbar-title>
 
           <v-spacer></v-spacer>
 
           <v-btn
             text
-            color="white"
+            color="black"
             to="/"
           >
             Home
@@ -19,7 +19,7 @@
             <template v-slot:activator="{ on, attrs }">
           <v-btn
             text
-            color="white"
+            color="black"
             to="/live"
             v-bind="attrs"
             v-on="on"
@@ -37,7 +37,7 @@
 
            <v-btn
             text
-            color="white"
+            color="black"
             to="/leagues"
           >
             Leagues
@@ -45,7 +45,7 @@
 
           <v-btn
             text
-            color="white"
+            color="black"
             to="/matches"
           >
             Matches
@@ -53,7 +53,7 @@
 
           <v-btn
             text
-            color="white"
+            color="black"
             to="/schedules"
           >
             Schedules
@@ -61,14 +61,14 @@
           
           <v-btn
             text
-            color="white"
+            color="black"
             to="/games"
           >
             Games
           </v-btn>
           <v-btn
             text
-            color="white"
+            color="black"
             to="/about-us"
           >
             About us
