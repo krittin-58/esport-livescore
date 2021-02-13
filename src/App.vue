@@ -2,7 +2,7 @@
   <v-app>
     <!-- Navbar layout -->
     <navbar></navbar>
-    <v-parallax height="100%" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
+    <v-parallax height="100%" src="https://www.e-sportsbetting.org/static/images/generic/background.jpg">
     <v-main>
       <main-content></main-content>
     </v-main>
