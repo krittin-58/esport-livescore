@@ -81,23 +81,24 @@ export default {
 
             teams: [],
             loading: false,
+            hide: false,
         }
     },
 
     mounted() {
-        this.getTeams(12);
+        this.getTeams(24,4);
     },
 
     methods: {
-        getTeams(per_page) {
-            PandascoreAPI.getListTeams(per_page).then((response) => {
+        getTeams(per_page, videogame_id) {
+            PandascoreAPI.getListTeams(per_page, videogame_id).then((response) => {
                 this.loading = true
                 if (response.data !== null) {
                     this.teams = response.data;
                     this.loading = false;
                 }
             });
-        }
+        },
     }
 }
 </script>

@@ -20,8 +20,8 @@ const PandascoreAPI = {
         return await axios.get(`${API_URL_ENDPOINT}/${LEAGUES}?token=${ACCESS_TOKEN}`, headers);
     },
 
-    async getListTeams(per_page) {
-        return await axios.get(`${API_URL_ENDPOINT}/${TEAMS}?token=${ACCESS_TOKEN}&per_page=${per_page}`, headers);
+    async getListTeams(per_page, videogame_id) {
+        return await axios.get(`${API_URL_ENDPOINT}/${TEAMS}?token=${ACCESS_TOKEN}&per_page=${per_page}&filter[videogame_id]=${videogame_id}`, headers);
     }
 };
 
