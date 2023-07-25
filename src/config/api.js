@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL_ENDPOINT = 'https://api.pandascore.co';
-const ACCESS_TOKEN = 'd0Q0tNZWxtU_f_wpHcGBfi8bHD1X3SkVaUZBMQVt_m5xc18ZDjs';
+const ACCESS_TOKEN = '<Pandascore_Api_key_here>';
 
 // PATH
 const LEAGUES = 'leagues';
